@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MessagePage.master.cs" Inherits="UI_MessagePage" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>系统页</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        .c{
+            text-align:center;
+            margin:0px auto;
+        }
+
+        .left{
+              color:#FFF;
+              width:200px;
+              float:left;
+              margin-left:auto;
+              text-align:center; 
+              height:none;
+              position:page;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div >
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

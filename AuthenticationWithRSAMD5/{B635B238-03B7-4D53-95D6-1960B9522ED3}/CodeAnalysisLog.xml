@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="d:\vs2022\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="17.0">
+ <Targets>
+  <Target Name="C:\Users\yonghu\AppData\Local\Temp\tmp61C2.tmp.cadir\bin\App_Code.dll">
+   <Modules>
+    <Module Name="app_code.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="GoodsDAL" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#AddGoods(Goods)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2024-05-23 08:24:11Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="D:\vsfile\AuthenticationWithRSAMD5\App_Code\DAL" File="GoodsDAL.cs" Line="130">可以在方法 'GoodsDAL.AddGoods(Goods)' 中多次释放对象 'conn'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 130</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#AddGtype(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2024-05-23 08:24:11Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="D:\vsfile\AuthenticationWithRSAMD5\App_Code\DAL" File="GoodsDAL.cs" Line="59">可以在方法 'GoodsDAL.AddGtype(string)' 中多次释放对象 'conn'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 59</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#AddProvider(System.String,System.String,System.String,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2024-05-23 08:24:11Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="D:\vsfile\AuthenticationWithRSAMD5\App_Code\DAL" File="GoodsDAL.cs" Line="229">可以在方法 'GoodsDAL.AddProvider(string, string, string, string)' 中多次释放对象 'conn'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 229</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CheckStockin(System.Int32,System.Double,System.String,System.Double)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2024-05-23 08:24:11Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="D:\vsfile\AuthenticationWithRSAMD5\App_Code\DAL" File="GoodsDAL.cs" Line="321">可以在方法 'GoodsDAL.CheckStockin(int, double, string, double)' 中多次释放对象 'conn'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 321</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CheckStockout(System.Int32,System.Double,System.String,System.Double)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2024-05-23 08:24:11Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="D:\vsfile\AuthenticationWithRSAMD5\App_Code\DAL" File="GoodsDAL.cs" Line="380">可以在方法 'GoodsDAL.CheckStockout(int, double, string, double)' 中多次释放对象 'conn'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 380</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CreateStore(System.String,System.Double)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2024-05-23 08:24:11Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="D:\vsfile\AuthenticationWithRSAMD5\App_Code\DAL" File="GoodsDAL.cs" Line="37">可以在方法 'GoodsDAL.CreateStore(string, double)' 中多次释放对象 'conn'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 37</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Discount(System.String,System.String,System.Double)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2024-05-23 08:24:11Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="D:\vsfile\AuthenticationWithRSAMD5\App_Code\DAL" File="GoodsDAL.cs" Line="182">可以在方法 'GoodsDAL.Discount(string, string, double)' 中多次释放对象 'conn'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 182</Issue>
+             <Issue Certainty="75" Level="Warning" Path="D:\vsfile\AuthenticationWithRSAMD5\App_Code\DAL" File="GoodsDAL.cs" Line="196">可以在方法 'GoodsDAL.Discount(string, string, double)' 中多次释放对象 'conn'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 196</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SelectGoods()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2024-05-23 08:24:11Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="D:\vsfile\AuthenticationWithRSAMD5\App_Code\DAL" File="GoodsDAL.cs" Line="158">可以在方法 'GoodsDAL.SelectGoods()' 中多次释放对象 'conn'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 158</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SelectGtype()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2024-05-23 08:24:11Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="D:\vsfile\AuthenticationWithRSAMD5\App_Code\DAL" File="GoodsDAL.cs" Line="87">可以在方法 'GoodsDAL.SelectGtype()' 中多次释放对象 'conn'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 87</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SelectGtypeddl()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2024-05-23 08:24:11Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="D:\vsfile\AuthenticationWithRSAMD5\App_Code\DAL" File="GoodsDAL.cs" Line="103">可以在方法 'GoodsDAL.SelectGtypeddl()' 中多次释放对象 'conn'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 103</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SelectProvider()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2024-05-23 08:24:11Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="D:\vsfile\AuthenticationWithRSAMD5\App_Code\DAL" File="GoodsDAL.cs" Line="258">可以在方法 'GoodsDAL.SelectProvider()' 中多次释放对象 'conn'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 258</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Stockinlog(Goods,System.Int32,System.Int32,System.Double)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2024-05-23 08:24:11Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="D:\vsfile\AuthenticationWithRSAMD5\App_Code\DAL" File="GoodsDAL.cs" Line="291">可以在方法 'GoodsDAL.Stockinlog(Goods, int, int, double)' 中多次释放对象 'conn'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 291</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Stockoutlog(Goods,System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2024-05-23 08:24:11Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="D:\vsfile\AuthenticationWithRSAMD5\App_Code\DAL" File="GoodsDAL.cs" Line="350">可以在方法 'GoodsDAL.Stockoutlog(Goods, int)' 中多次释放对象 'conn'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 350</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="LoginDAL" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Login(System.String,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2024-05-23 08:24:11Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="D:\vsfile\AuthenticationWithRSAMD5\App_Code\DAL" File="LoginDAL.cs" Line="44">可以在方法 'LoginDAL.Login(string, string)' 中多次释放对象 'conn'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 44</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#RegistAdmin(User)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2024-05-23 08:24:11Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="D:\vsfile\AuthenticationWithRSAMD5\App_Code\DAL" File="LoginDAL.cs" Line="108">可以在方法 'LoginDAL.RegistAdmin(User)' 中多次释放对象 'conn'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 108</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#RegistCheck(System.String,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2024-05-23 08:24:11Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="D:\vsfile\AuthenticationWithRSAMD5\App_Code\DAL" File="LoginDAL.cs" Line="82">可以在方法 'LoginDAL.RegistCheck(string, string)' 中多次释放对象 'conn'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 82</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#RegistUser(User)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2024-05-23 08:24:11Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="D:\vsfile\AuthenticationWithRSAMD5\App_Code\DAL" File="LoginDAL.cs" Line="133">可以在方法 'LoginDAL.RegistUser(User)' 中多次释放对象 'conn'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 133</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="RSAHelper" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CreateRsaProviderFromPublicKey(System.String)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2024-05-23 08:24:11Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="D:\vsfile\AuthenticationWithRSAMD5\App_Code\Helper" File="RSAHelper.cs" Line="250">可以在方法 'RSAHelper.CreateRsaProviderFromPublicKey(string)' 中多次释放对象 'mem'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 250</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="UserDAL" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#AllUserinfo(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2024-05-23 08:24:11Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="D:\vsfile\AuthenticationWithRSAMD5\App_Code\DAL" File="UserDAL.cs" Line="137">可以在方法 'UserDAL.AllUserinfo(string)' 中多次释放对象 'conn'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 137</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DeleteAdmin(System.String,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2024-05-23 08:24:11Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="D:\vsfile\AuthenticationWithRSAMD5\App_Code\DAL" File="UserDAL.cs" Line="297">可以在方法 'UserDAL.DeleteAdmin(string, string)' 中多次释放对象 'conn'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 297</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetImageUser(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2024-05-23 08:24:11Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="D:\vsfile\AuthenticationWithRSAMD5\App_Code\DAL" File="UserDAL.cs" Line="320">可以在方法 'UserDAL.GetImageUser(string)' 中多次释放对象 'conn'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 320</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ResetAdmin(System.String,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2024-05-23 08:24:11Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="D:\vsfile\AuthenticationWithRSAMD5\App_Code\DAL" File="UserDAL.cs" Line="268">可以在方法 'UserDAL.ResetAdmin(string, string)' 中多次释放对象 'conn'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 268</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ResetUser(System.String,System.String,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2024-05-23 08:24:11Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="D:\vsfile\AuthenticationWithRSAMD5\App_Code\DAL" File="UserDAL.cs" Line="238">可以在方法 'UserDAL.ResetUser(string, string, string)' 中多次释放对象 'conn'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 238</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SelectedUserinfo(System.String,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2024-05-23 08:24:11Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="D:\vsfile\AuthenticationWithRSAMD5\App_Code\DAL" File="UserDAL.cs" Line="164">可以在方法 'UserDAL.SelectedUserinfo(string, string)' 中多次释放对象 'conn'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 164</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SetImageUser(System.String,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2024-05-23 08:24:11Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="D:\vsfile\AuthenticationWithRSAMD5\App_Code\DAL" File="UserDAL.cs" Line="354">可以在方法 'UserDAL.SetImageUser(string, string)' 中多次释放对象 'conn'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 354</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UpdateDetail(User,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2024-05-23 08:24:11Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="D:\vsfile\AuthenticationWithRSAMD5\App_Code\DAL" File="UserDAL.cs" Line="114">可以在方法 'UserDAL.UpdateDetail(User, string)' 中多次释放对象 'conn'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 114</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UpdateRow(User,System.Int32,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2024-05-23 08:24:11Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="D:\vsfile\AuthenticationWithRSAMD5\App_Code\DAL" File="UserDAL.cs" Line="207">可以在方法 'UserDAL.UpdateRow(User, int, string)' 中多次释放对象 'conn'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 207</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Utype(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2024-05-23 08:24:11Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="D:\vsfile\AuthenticationWithRSAMD5\App_Code\DAL" File="UserDAL.cs" Line="41">可以在方法 'UserDAL.Utype(string)' 中多次释放对象 'conn'。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 41</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="不要多次释放对象" Category="Microsoft.Usage" CheckId="CA2202">
+   <Name>不要多次释放对象</Name>
+   <Description>可以多次调用正确实现的 Dispose 方法，而不会引发异常。但是，并不保证所有情况下都会如此。若要避免生成 System.ObjectDisposedException，您不应对一个对象多次调用 Dispose。</Description>
+   <Resolution Name="Default">可以在方法 {1} 中多次释放对象 {0}。若要避免生成 System.ObjectDisposedException，不应对一个对象多次调用 Dispose。: Lines: 133</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182334.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="17.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">类别</String>
+  <String Key="Certainty">确定性</String>
+  <String Key="CollapseAll">全部折叠</String>
+  <String Key="CheckId">检查 ID</String>
+  <String Key="Error">错误</String>
+  <String Key="Errors">错误</String>
+  <String Key="ExpandAll">全部展开</String>
+  <String Key="Help">帮助</String>
+  <String Key="Line">行</String>
+  <String Key="Messages">消息</String>
+  <String Key="LocationNotStoredInPdb">[位置未存储在 Pdb 中]</String>
+  <String Key="Project">项目</String>
+  <String Key="Resolution">解析</String>
+  <String Key="Rule">规则</String>
+  <String Key="RuleFile">规则文件</String>
+  <String Key="RuleDescription">规则说明</String>
+  <String Key="Source">源</String>
+  <String Key="Status">状态</String>
+  <String Key="Target">目标</String>
+  <String Key="Warning">警告</String>
+  <String Key="Warnings">警告</String>
+  <String Key="ReportTitle">Code Analysis 报告</String>
+ </Localized>
+</FxCopReport>
