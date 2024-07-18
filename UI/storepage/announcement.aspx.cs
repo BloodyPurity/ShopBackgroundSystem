@@ -101,14 +101,14 @@ public partial class UI_store_anouncement : System.Web.UI.Page
             announcement.detail = tbxdetail.Text;
             announcement.createtime = DateTime.Now;
             announcement.owner = Uaccount;
-            if (storeDAL.AddAnnouncement(announcement))
+            announcement.uid = userDAL.GetUID(Uaccount);
+            if (announcement.uid != 0)
             {
-                Response.Write("<script>alert('操作成功');window.location.href='announcement.aspx';</script>");
-                Bind();
-            }
-            else
-            {
-                
+                if (storeDAL.AddAnnouncement(announcement))
+                {
+                    Response.Write("<script>alert('操作成功');window.location.href='announcement.aspx';</script>");
+                    Bind();
+                }
             }
         }
         else

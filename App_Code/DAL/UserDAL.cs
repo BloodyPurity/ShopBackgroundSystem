@@ -354,4 +354,23 @@ public class UserDAL
             return i;
         }
     }
+
+    public int GetUID(string uaccount)
+    {
+        string str = "select uid from User where Uaccount =@Uaccount";
+        using (MySqlConnection conn = new MySqlConnection(strCon))
+        {
+            MySqlCommand cmd = new MySqlCommand(str, conn);
+            cmd.Parameters.AddWithValue("@Uaccount", uaccount);
+            conn.Open();
+            var i = cmd.ExecuteScalar();
+            conn.Close();
+            if (i != null && i.ToString() != "")
+            {
+                string rst = i.ToString();
+                return Convert.ToInt32(rst);
+            }
+            else return 0;
+        }
+    }
 }

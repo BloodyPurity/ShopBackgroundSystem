@@ -68,7 +68,7 @@ public class StoreDAL
     }
     public bool AddAnnouncement(Announcement announcement)
     {
-        string str = "insert into announcement(name,detail,time,isdeleted,owner) values(@name,@detail,@time,0,@owner)";
+        string str = "insert into announcement(name,detail,time,isdeleted,owner,uid) values(@name,@detail,@time,0,@owner,@uid)";
         using(MySqlConnection conn = new MySqlConnection(strCon))
         {
             MySqlCommand cmd = new MySqlCommand(str, conn);
@@ -76,6 +76,7 @@ public class StoreDAL
             cmd.Parameters.AddWithValue("@detail", announcement.detail);
             cmd.Parameters.AddWithValue("@time", announcement.createtime.ToString("G"));
             cmd.Parameters.AddWithValue("@owner", announcement.owner);
+            cmd.Parameters.AddWithValue("@uid", announcement.uid);
             conn.Open();
             int i= cmd.ExecuteNonQuery();
             return i > 0;
